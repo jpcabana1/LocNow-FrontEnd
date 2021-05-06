@@ -1,5 +1,5 @@
 # LocNow-FrontEnd
 
 ## Packages Utilizados:
-### - React-Redux
-### - React-Bootstrap
+#### - React-Redux
+#### - React-Bootstrap
