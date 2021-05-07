@@ -1,3 +1,6 @@
 .catalogo {
   color: black;
+  display: block;
+  width: 89rem;
+  margin-left: 5rem;
 }

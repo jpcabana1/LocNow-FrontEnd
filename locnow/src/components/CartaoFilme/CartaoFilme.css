@@ -1,0 +1,31 @@
+.cartaoFilme {
+  width: 10rem;
+  height: 23rem;
+  float: left;
+  margin: 1rem;
+  background-color: rgb(43, 42, 42);
+}
+
+.cartaoImagem {
+  width: 10rem;
+  height: 12rem;
+}
+
+.botaoCartao {
+  position: absolute;
+  bottom: 0;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  width: 8rem;
+  text-align: left;
+}
+
+.botaoIcone {
+  float: right;
+}
+
+.textCartao {
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(0, 112, 156);
+}

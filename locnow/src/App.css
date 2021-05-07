@@ -1,4 +1,10 @@
-/* .app {
-  display: grid;
-  place-items: center;
-} */
+.app {
+  /* display: grid;
+  place-items: center; */
+  /* width: 100rem;
+  height: 50rem; */
+}
+
+body {
+  background-color: rgb(39, 39, 54);
+}
