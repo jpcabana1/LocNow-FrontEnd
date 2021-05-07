@@ -1,5 +1,9 @@
+.modalPrincipal {
+}
+
 .modalBordas {
-  background-color: rgb(46, 43, 43);
+  background-color: rgb(49, 52, 63);
+  color: white;
 }
 
 .modalBody {
@@ -8,8 +12,18 @@
 }
 
 .modelImagem {
-  width: 30rem;
-  height: 30rem;
+  margin-left: 15rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.botoesAluguelModal {
+  display: block;
+  place-items: center;
+}
+
+.botaoAluguel {
+  margin-left: 2rem;
 }
 
 .modalCaption {
@@ -18,5 +32,5 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(32, 32, 32);
 }

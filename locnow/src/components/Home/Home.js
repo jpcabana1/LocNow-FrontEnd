@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home() {
-  const intervalTime = 3000;
+  const intervalTime = 2500;
   return (
     <div>
       <Carousel>
