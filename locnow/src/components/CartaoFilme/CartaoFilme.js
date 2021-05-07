@@ -29,7 +29,7 @@ function CartaoFilme(props) {
           </Card.Text>
           <Button
             onClick={handleClick}
-            variant="outline-info"
+            variant="secondary"
             className="botaoCartao"
           >
             Adicionar
