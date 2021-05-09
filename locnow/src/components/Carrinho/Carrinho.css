@@ -1,7 +1,5 @@
-.dropCarrinho {
-  margin-left: 38rem;
-}
-
-.carrinhoItem {
-  float: right;
+.carrinhoPage {
+  color: white;
+  display: grid;
+  place-items: center;
 }

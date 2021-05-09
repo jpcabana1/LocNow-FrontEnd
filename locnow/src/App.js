@@ -3,6 +3,7 @@ import React from "react";
 import Catalogo from "./components/Catalogo/Catalogo";
 import Pedidos from "./components/Pedidos/Pedidos";
 import PedidoDetalhe from "./components/PedidoDetalhe/PedidoDetalhe";
+import Carrinho from "./components/Carrinho/Carrinho";
 import NavbarLocadora from "./components/Navbar/NavbarLocadora";
 import Erro from "./components/Erro/Erro";
 import Home from "./components/Home/Home";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/catalogo" component={Catalogo} exact />
           <Route path="/pedidos" component={Pedidos} />
           <Route path="/detalhe" component={PedidoDetalhe} />
+          <Route path="/carrinho" component={Carrinho} />
           <Route component={Erro} />
         </Switch>
       </main>

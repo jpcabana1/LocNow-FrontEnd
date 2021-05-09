@@ -1,0 +1,8 @@
+.carrinhoItem {
+  margin-top: 2rem;
+  border-color: rgb(146, 146, 146);
+  background-color: rgb(41, 54, 54);
+  border-style: solid;
+  color: white;
+  width: 80rem;
+}

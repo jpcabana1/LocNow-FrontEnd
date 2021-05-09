@@ -1,10 +1,10 @@
 import React from "react";
-import Carrinho from "../Carrinho/Carrinho";
 import BotaoLogoff from "../Login/BotaoLogoff";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilm } from "@fortawesome/free-solid-svg-icons";
+import { faFilm, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavbarLocadora.css";
 
@@ -24,7 +24,15 @@ function NavbarLocadora() {
           <Nav.Link href="/pedidos">Pedidos</Nav.Link>
           <Nav.Link href="/detalhe">Detalhe</Nav.Link>
         </Nav>
-        <Carrinho />
+
+        <Button
+          className="navegacaoCarrinho"
+          variant="warning"
+          href="/carrinho"
+        >
+          <FontAwesomeIcon size="1x" icon={faShoppingCart} />
+          Carrinho
+        </Button>
         <BotaoLogoff />
       </Navbar>
     </div>

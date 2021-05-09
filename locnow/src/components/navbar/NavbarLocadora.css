@@ -17,5 +17,11 @@
 }
 
 .navegacaoCarrinho {
-  margin-left: 16rem;
+  margin-left: 38rem;
+  font-size: 2.5rem;
+  float: right;
+}
+
+.carrinhoItem {
+  float: right;
 }
