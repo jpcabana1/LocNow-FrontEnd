@@ -13,6 +13,9 @@
 }
 
 .navegacaoLink {
-  margin-left: 20rem;
   font-size: 1.5rem;
+}
+
+.navegacaoCarrinho {
+  margin-left: 16rem;
 }

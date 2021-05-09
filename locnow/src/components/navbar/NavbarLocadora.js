@@ -1,13 +1,12 @@
 import React from "react";
+import Carrinho from "../Carrinho/Carrinho";
+import BotaoLogoff from "../Login/BotaoLogoff";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilm } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavbarLocadora.css";
-//import Form from "react-bootstrap/Form";
-//import Button from "react-bootstrap/Button";
-//import FormControl from "react-bootstrap/FormControl";
 
 function NavbarLocadora() {
   return (
@@ -25,12 +24,8 @@ function NavbarLocadora() {
           <Nav.Link href="/pedidos">Pedidos</Nav.Link>
           <Nav.Link href="/detalhe">Detalhe</Nav.Link>
         </Nav>
-        {/* <Form inline style={{ marginLeft: "45rem" }}>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        </Form>
-        <Button style={{ marginLeft: "4rem" }} variant="outline-info">
-          Search
-        </Button> */}
+        <Carrinho />
+        <BotaoLogoff />
       </Navbar>
     </div>
   );
