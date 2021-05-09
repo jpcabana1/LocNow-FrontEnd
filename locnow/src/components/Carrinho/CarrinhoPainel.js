@@ -18,23 +18,25 @@ function CarrinhoPainel() {
             <Form.Control
               type="text"
               placeholder="Pesquisar"
-              style={{ width: "10rem" }}
+              size="lg"
+              style={{ width: "25rem", marginTop: "3rem" }}
             />
           </Col>
           <Col>
-            <Button>
+            <Button style={{ marginTop: "3rem" }}>
               <FontAwesomeIcon size="2x" icon={faSearch} />
             </Button>
           </Col>
           <Col>
             <Button
-              variant="outline-success"
+              variant="success"
               style={{
                 width: "25rem",
                 marginTop: "3rem",
                 float: "right",
                 textAlign: "left",
                 fontSize: "2rem",
+                color: "",
               }}
             >
               Finalizar pedido
