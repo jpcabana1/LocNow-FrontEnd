@@ -1,7 +1,7 @@
 import { estado } from "../../app/estadoInicial";
 import { DEFINIRUSUARIO, LIMPARUSUARIO } from "./loginActions";
 
-export const loginReducer = (state = estado, action) => {
+export const loginReducer = (state = estado.carregamentoInicial, action) => {
   switch (action.type) {
     case DEFINIRUSUARIO: {
       let objetoCarregamento = { ...state.carregamentoInicial };

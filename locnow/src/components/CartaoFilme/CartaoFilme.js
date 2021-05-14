@@ -12,7 +12,6 @@ function CartaoFilme(props) {
 
   const handleClick = () => {
     setShow(!show);
-    console.log(show);
   };
   return (
     <div key={props.id.toString()}>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import BotaoLogoff from "../Login/BotaoLogoff";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
@@ -9,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavbarLocadora.css";
 
 function NavbarLocadora() {
+  const carrinho = useSelector((state) => state.states.carrinho);
+
   return (
     <div>
       <Navbar sticky="top" bg="dark" variant="dark">
@@ -21,8 +24,8 @@ function NavbarLocadora() {
           <Nav.Link className="navegacaoLink" href="/catalogo">
             Catálogo
           </Nav.Link>
-          <Nav.Link href="/pedidos">Pedidos</Nav.Link>
-          <Nav.Link href="/detalhe">Detalhe</Nav.Link>
+          <Nav.Link to="/pedidos">Pedidos</Nav.Link>
+          <Nav.Link to="/detalhe">Detalhe</Nav.Link>
         </Nav>
 
         <Button
@@ -31,7 +34,7 @@ function NavbarLocadora() {
           href="/carrinho"
         >
           <FontAwesomeIcon size="1x" icon={faShoppingCart} />
-          Carrinho
+          Carrinho: {carrinho.length} itens
         </Button>
         <BotaoLogoff />
       </Navbar>

@@ -6,8 +6,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./PainelAdicionarCarrinho.css";
+import { v4 as uuidv4 } from "uuid";
+import { useDispatch } from "react-redux";
+import { adcionarCarrinho } from "../../reducers/carrinho/carrinhoActions";
 
 function PainelAdicionarCarrinho(props) {
+  const dispatch = useDispatch();
+
+  const criarItem = () => {
+    const carrinhoItem = {
+      id: uuidv4(),
+      idPedido: uuidv4(),
+      idFilme: props.info.id,
+      diasAlocacao: 0,
+      dataCriacao: new Date(),
+      statusDevolucao: false,
+    };
+    console.log(carrinhoItem);
+    dispatch(adcionarCarrinho(carrinhoItem));
+  };
+
   return (
     <div>
       <Modal
@@ -45,16 +63,32 @@ function PainelAdicionarCarrinho(props) {
             ac consectetur ac, vestibulum at eros.
           </p>
           <div className="botoesAluguelModal">
-            <Button className="botaoAluguel" variant="primary">
+            <Button
+              className="botaoAluguel"
+              variant="primary"
+              onClick={criarItem}
+            >
               Alugar para 1 dia
             </Button>
-            <Button className="botaoAluguel" variant="primary">
+            <Button
+              className="botaoAluguel"
+              variant="primary"
+              onClick={criarItem}
+            >
               Alugar para 3 dias
             </Button>
-            <Button className="botaoAluguel" variant="primary">
+            <Button
+              className="botaoAluguel"
+              variant="primary"
+              onClick={criarItem}
+            >
               Alugar para 5 dias
             </Button>
-            <Button className="botaoAluguel" variant="primary">
+            <Button
+              className="botaoAluguel"
+              variant="primary"
+              onClick={criarItem}
+            >
               Alugar para 7 dias
             </Button>
           </div>
