@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import BotaoLogoff from "../Login/BotaoLogoff";
 import Navbar from "react-bootstrap/Navbar";
@@ -15,27 +16,40 @@ function NavbarLocadora() {
   return (
     <div>
       <Navbar sticky="top" bg="dark" variant="dark">
-        <Navbar.Brand className="navegacaoBrand" href="/">
-          <FontAwesomeIcon size="1x" icon={faFilm} />
-          LocNow
-        </Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand className="navegacaoBrand">
+            <FontAwesomeIcon size="1x" icon={faFilm} />
+            LocNow
+          </Navbar.Brand>
+        </Link>
 
         <Nav className="navegacao">
-          <Nav.Link className="navegacaoLink" href="/catalogo">
-            Catálogo
-          </Nav.Link>
-          <Nav.Link to="/pedidos">Pedidos</Nav.Link>
-          <Nav.Link to="/detalhe">Detalhe</Nav.Link>
-        </Nav>
+          <Link to="/catalogo">
+            <Button className="navegacaoLink" variant="dark">
+              Catálogo
+            </Button>
+            {/* <Nav.Link className="navegacaoLink">Catálogo</Nav.Link> */}
+          </Link>
 
-        <Button
-          className="navegacaoCarrinho"
-          variant="warning"
-          href="/carrinho"
-        >
-          <FontAwesomeIcon size="1x" icon={faShoppingCart} />
-          Carrinho: {carrinho.length} itens
-        </Button>
+          <Link to="/pedidos">
+            <Button className="navegacaoLink" variant="dark">
+              Pedidos
+            </Button>
+          </Link>
+
+          <Link to="/detalhe">
+            <Button className="navegacaoLink" variant="dark">
+              Detalhe
+            </Button>
+          </Link>
+        </Nav>
+        <Link to="/carrinho">
+          <Button className="navegacaoCarrinho" variant="warning">
+            <FontAwesomeIcon size="1x" icon={faShoppingCart} />
+            Carrinho: {carrinho.length} itens
+          </Button>
+        </Link>
+
         <BotaoLogoff />
       </Navbar>
     </div>
